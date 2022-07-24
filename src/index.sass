@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap')
+
+$font-main: 'Roboto', sans-serif
+$background-color: #eeeeee
+$text-color: #172a3a
+$note-color: #053c5e
+$accent-color-1: #7fb285
+$accent-color-2: #c1292e
+
+body
+    background-color: $background-color
+    font-family: $font-main
+    font-weight: 400
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $text-color
+h1
+    text-align: center
+h2
+    text-align: center
+h3
+    text-align: center
+p
+    font-weight: 200
+    line-height: 200%
+.main_container
+    width: 44.44vw
+    min-width: 250pt
+.status-bar
+    display: table-cell
+    vertical-align: middle
+    width: 400pt
+    color: $text-color
+    font-size: 14pt
+    height: 32pt
+    .name
+        display: inline-block
+        width: 40%
+    .locaation_container
+        float: right
+        width: 40%
+        margin-right: 5%
+    .location
+        color: $note-color
+        font-weight: 300
+    .indicator_container
+        display: inline-block
+        float: right
+        width: 20%
+    .indicator_ok
+        display: inline-block
+        text-align: left
+        color: $accent-color-1
+    .indicator_fail
+        display: inline-block
+        text-align: left
+        color: $accent-color-2
+
+.server_statistics_bar
+    .icon 
+        height: 16pt
+        vertical-align: text-bottom
+    .name
+        display: inline-block
+        padding-left: 5pt
+        font-size: 12pt
+        width: 50pt
+    .value
+        display: inline-block
+        margin-left: 5pt
+        font-size: 12pt
